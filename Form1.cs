@@ -1,4 +1,4 @@
-namespace software_lab6
+п»їnamespace software_lab6
 {
     public partial class Form1 : Form
     {
@@ -39,10 +39,10 @@ namespace software_lab6
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.InitialDirectory = Application.StartupPath;
             dlg.Filter = "txt files (*.txt)|*.txt |" +
-                "Мои файлы (расширения не придумал)|*.xxx|" +
-                "Сборки (*.exe)|*.exe";
+                "РњРѕРё С„Р°Р№Р»С‹ (СЂР°СЃС€РёСЂРµРЅРёСЏ РЅРµ РїСЂРёРґСѓРјР°Р»)|*.xxx|" +
+                "РЎР±РѕСЂРєРё (*.exe)|*.exe";
             dlg.FilterIndex = 3;
-            dlg.Title = "Выбор моего файла";
+            dlg.Title = "Р’С‹Р±РѕСЂ РјРѕРµРіРѕ С„Р°Р№Р»Р°";
 
             if (dlg.ShowDialog() == DialogResult.OK)
             {
@@ -53,7 +53,7 @@ namespace software_lab6
         private void btnChooseFolder_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog dlg = new FolderBrowserDialog();
-            dlg.Description = "Выберите папку для демонстрации работы диалога";
+            dlg.Description = "Р’С‹Р±РµСЂРёС‚Рµ РїР°РїРєСѓ РґР»СЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё СЂР°Р±РѕС‚С‹ РґРёР°Р»РѕРіР°";
             dlg.ShowNewFolderButton = true;
             dlg.SelectedPath = Application.StartupPath;
 
